@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.container { max-width: 500px; margin: 0 auto; padding: 40px 20px; }
+
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 24px; color: white;
+}
+.header h2 { margin: 0; }
+
+.card {
+  background: white; border-radius: 14px; padding: 28px;
+  margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+h2 { margin: 0 0 4px; color: #1a1a2e; }
+h3 { margin: 0 0 4px; color: #1a1a2e; }
+.subtitle { color: #888; font-size: 14px; margin-bottom: 18px; }
+
+label { display: block; margin-top: 14px; margin-bottom: 6px; font-weight: 600; font-size: 14px; color: #333; }
+input {
+  width: 100%; padding: 11px; border: 1.5px solid #ddd; border-radius: 8px;
+  font-size: 14px; transition: border 0.2s;
+}
+input:focus { outline: none; border-color: #4361ee; }
+
+button {
+  margin-top: 18px; padding: 11px 18px; border: none; border-radius: 8px;
+  background: #4361ee; color: white; cursor: pointer; font-size: 14px;
+  font-weight: 600; transition: background 0.2s, transform 0.1s;
+  width: 100%;
+}
+button:hover { background: #3651d4; transform: translateY(-1px); }
+
+.header button { width: auto; background: #e74c3c; }
+.header button:hover { background: #c0392b; }
+
+.error { color: #e74c3c; font-size: 14px; margin-top: 10px; font-weight: 500; }
+
+.prestamo-item {
+  border: 1.5px solid #eee; border-radius: 10px; padding: 16px; margin-bottom: 14px;
+  transition: box-shadow 0.2s;
+}
+.prestamo-item:hover { box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+
+.acciones { display: flex; gap: 10px; margin-top: 12px; }
+.acciones button { margin-top: 0; }
+.aprobar { background: #2ecc71; }
+.aprobar:hover { background: #27ae60; }
+.rechazar { background: #e74c3c; }
+.rechazar:hover { background: #c0392b; }
+
+.pendiente { color: #f39c12; font-weight: 700; }
+.aprobado { color: #2ecc71; font-weight: 700; }
+.rechazado { color: #e74c3c; font-weight: 700; }
+.exito { color: #2ecc71; font-size: 14px; margin-top: 10px; font-weight: 500; }
